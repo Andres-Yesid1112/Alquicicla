@@ -1,0 +1,245 @@
+*{
+    font-family: cursive; 
+}
+.total2{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+.imagen{
+    width: 100%;
+}
+h1{
+    margin-top:10px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+    color: #333;
+    font-size: 35px;
+}
+h2{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #444;
+    margin: 5px 0 35px;
+}
+.total{
+    position: relative;
+    width: 85%;
+    margin: auto;
+    display: flex;
+
+}
+.tipoCicla{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+.tipoCicla:hover{
+    background: #e6eaef;
+    border-radius: 25px;
+}
+.tipoCicla img{
+    width: 180px;
+    height: 150px;
+    border-radius: 25px;
+}
+.tipoCicla h3{
+    margin: 5px 30px;
+    font-size: 30px;
+}
+.parteIzquierda{
+    width: 45%;
+    margin: 0 10% 0 0;
+}
+.parteDerecha{
+    width: 43%;
+}
+/*------------------------------------------- CONTENIDO CICLAS ----------------------------------------------*/
+.linea{
+    width: 97%;
+    border-bottom: 1px solid #ccc;
+    margin: 10px auto;
+}
+.dispon{
+    position: absolute;
+    right: 30px;
+    top: -16px;
+}
+.dis{
+    font-weight: 100;
+    font-size: 20px;
+    text-align: right;
+}
+.noDis{
+    font-weight: 100;
+    font-size: 20px;
+    color: #ff7766;
+    text-align: right;
+}
+.marca{
+    margin: 10px 30px;
+    font-size: 20px;
+}
+.check{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin: 14px 16px;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 13px 16px;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #11aa55;
+}
+.label .checkmark:after {
+  top: 6px;
+  left: 6.2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #33cc77;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.label input:checked ~ .checkmark:after {
+    display: block;
+}
+.label{
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.label:hover input ~ .checkmark {
+    background-color: rgba(160, 345, 238);
+}
+.label input:checked ~ .checkmark {
+    background-color: #33cc77;
+  }
+
+/* ------------------------- FORMULARIO ----------------------------------------------------*/
+
+.lineaLarga{
+    width: 100%;
+    margin: 40px 0;
+    border-bottom: 3px dashed  #ff9033;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.div:nth-child(2){
+    margin-left: 100px;
+    margin-top: -10px;
+}
+.form select{
+    width: 95%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0 40px 0;
+    outline: none;
+}
+.form input{
+    width: 92%;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #555;
+    margin: 12px 0 40px 0;
+}
+.button{
+    position: absolute;
+    padding: 15px;
+    width: 50% !important;
+    top: 540px;
+    left: 25%;
+    font-size: 25px;
+    font-weight: 600;
+    background: #33d494;
+    border: none !important;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.labelInp{
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #555;
+}
+
+/*----------------------------------- CUADRO DIALOGO -----------------------------------------------------*/
+.InsuficientesBis{
+    background: white;
+    border: 1px solid #999;
+    box-shadow: 0 0 20px #666;
+    position: fixed;
+    width: 50%;
+    left: 25%;
+    z-index: 4;
+    padding: 7px 20px 40px 20px;
+    border-radius: 20px;
+    top: 200px;
+}
+.InsuficientesBis h2{
+    color: #ffa033;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
+.InsuficientesBis button{
+    padding: 5px 20px;
+    font-size: 21px;
+    font-weight: 600;
+    background: #33dd99;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 30px;
+}
+
+.InsuficientesBis p{
+    text-align: center;
+    font-size: 21px;
+    padding: 0 40px;
+}
+
+.borroso{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    top: 0;
+    background-color: rgba(23, 47, 92, 0.2);
+    backdrop-filter: blur(4px);
+}

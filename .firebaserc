@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "alquicila": {
+      "hosting": {
+        "ProyectoBicicletas": [
+          "alquicila"
+        ]
+      }
+    }
+  }
+}

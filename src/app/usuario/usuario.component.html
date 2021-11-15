@@ -1,0 +1,35 @@
+<div class="total">
+    <app-menu></app-menu>
+    <div class="formulario">
+        <div class="part1">
+            <h1 (click)="cambiarC()" [ngStyle]="{'color': !iniciar ? '#45c08f' : '#333' }">Iniciar sesión</h1><h1 (click)="cambiarI()" [ngStyle]="{'color': iniciar ? '#45c08f' : '#333' }">Crear cuenta</h1>
+        </div>
+        <div class="linea"></div>
+        <div class="iniciar" *ngIf="!iniciar">
+            <label for="">Correo:</label>
+            
+            <input type="text" name="email" [(ngModel)]="email">
+
+            <label for="">Contraseña:</label>
+            <input type="password" name="password" [(ngModel)]="password">
+            
+
+            <input class="submit" type="button" value="Iniciar" (click)="login()">
+            <button class="google"><img src="../../assets/img/GOOGLE.jpg"> Iniciar con google</button>
+        </div>
+
+        <div class="crear" *ngIf="iniciar">
+            <label for="">Nombre:</label>
+            <input type="text" name="name2" [(ngModel)]="name2">
+
+            <label for="">Correo:</label>
+            <input type="text" name="email2" [(ngModel)]="email2">
+
+            <label for="">Contraseña:</label>
+            <input type="password" name="password2" [(ngModel)]="password2">
+
+            <input class="submit" type="button" value="crear" (click)="crear()">
+            <button class="google"><img src="../../assets/img/GOOGLE.jpg"> Iniciar con google</button>
+        </div>
+    </div>
+</div>

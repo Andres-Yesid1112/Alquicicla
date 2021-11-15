@@ -1,0 +1,55 @@
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: 0;
+    background: #303036;
+    display: flex;
+    z-index: 5;
+}
+.cuenta{
+    position: absolute;
+    right: 50px;
+}
+.menu .h2{
+    letter-spacing: 2px;
+    margin: 10px 20px;
+    font-family:fantasy;
+    font-weight: 100;
+    color: #ff5544;
+    font-size: 30px;
+}
+.menu a{
+    letter-spacing: 1px;
+    margin: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    text-decoration: none;
+}
+.null{
+    width: 100%;
+    height: 60px;
+}
+.menu2{
+    width: 100%;
+    height: 40px;
+    background: #eee;
+    display: flex;
+    position:relative;
+    z-index: 4;
+}
+.menu2 a{
+    color: #444;
+    margin: 5px 20px;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    text-decoration: none;
+}
+i{
+    color:#ff7766;
+    margin: auto 10px;
+}

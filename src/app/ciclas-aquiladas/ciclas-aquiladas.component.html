@@ -1,0 +1,13 @@
+<div class="total">
+    <app-menu></app-menu>
+    <h1>Ciclas alquilada</h1>
+    <table>
+        <tr>
+            <th>Usuario</th><th>Tipo de cicla</th><th>Marca</th><th>Fecha alquilada</th><th>Dias alquilada</th><th>Acciones</th>
+        </tr>
+        <tr *ngFor="let bike of bikeList">
+            <td>{{bike.nombreUsuario}}</td><td>{{bike.tipo}}</td><td>{{bike.marca}}</td><td>{{bike.fechaAlquilacion}}</td><td>{{bike.diasAquilar}}</td> <td><span class="edi">Editar</span><span class="dev">Devolver</span></td>
+        </tr>
+    </table>
+</div>
+

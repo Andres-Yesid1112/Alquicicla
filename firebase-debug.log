@@ -1,0 +1,73 @@
+[debug] [2021-10-13T16:31:28.189Z] ----------------------------------------------------------------------
+[debug] [2021-10-13T16:31:28.196Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\adria\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-13T16:31:28.197Z] CLI Version:   9.20.0
+[debug] [2021-10-13T16:31:28.197Z] Platform:      win32
+[debug] [2021-10-13T16:31:28.198Z] Node Version:  v14.15.4
+[debug] [2021-10-13T16:31:28.263Z] Time:          Wed Oct 13 2021 11:31:28 GMT-0500 (hora estándar de Colombia)
+[debug] [2021-10-13T16:31:28.263Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-13T16:31:28.506Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-13T16:31:28.507Z] > authorizing via signed-in user (jeffftheier@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\adria\Desktop\Bicicletas\ProyectoBicicletas
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-10-13T16:32:09.068Z] > refreshing access token with scopes: []
+[debug] [2021-10-13T16:32:09.069Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-13T16:32:09.403Z] <<< HTTP RESPONSE 200 {"date":"Wed, 13 Oct 2021 16:35:00 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-13T16:32:09.530Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/alquicila [none]
+[debug] [2021-10-13T16:32:09.929Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/alquicila 200
+[debug] [2021-10-13T16:32:09.930Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/alquicila {"projectId":"alquicila","projectNumber":"866455089269","displayName":"Alquicicla","name":"projects/alquicila","resources":{"hostingSite":"alquicila","realtimeDatabaseInstance":"alquicila-default-rtdb"},"state":"ACTIVE"}
+[info] i  Using project alquicila (Alquicicla) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-10-13T16:32:09.998Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-13T16:32:09.998Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-13T16:32:10.158Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 13 Oct 2021 16:35:01 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-13T16:32:10.236Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/alquicila/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-10-13T16:32:10.918Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 13 Oct 2021 16:35:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-10-13T16:32:10.925Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/alquicila/locations/-/instances/alquicila-default-rtdb  
+ 
+[debug] [2021-10-13T16:32:11.385Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 13 Oct 2021 16:35:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-10-13T16:32:36.534Z] >>> HTTP REQUEST GET https://alquicila-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-10-13T16:32:37.024Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Wed, 13 Oct 2021 16:35:28 GMT","content-type":"application/json; charset=utf-8","content-length":"60","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2021-10-13T16:32:37.213Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\adria\Desktop\Bicicletas\ProyectoBicicletas\dist\ProyectoBicicletas'
+    at Object.openSync (fs.js:476:3)
+    at Object.writeFileSync (fs.js:1467:35)
+    at Object.createFileSync (C:\Users\adria\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:43:6)
+    at Config.writeProjectFile (C:\Users\adria\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:144:12)
+    at writeDBRules (C:\Users\adria\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:27:12)
+    at Object.doSetup [as database] (C:\Users\adria\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:117:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async init (C:\Users\adria\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.

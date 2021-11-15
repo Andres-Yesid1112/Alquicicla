@@ -1,0 +1,107 @@
+<div class="total2">
+    <app-menu></app-menu>
+
+    <div *ngIf="dialogoDisp" class="InsuficientesBis">
+        <h2 style="color: red;">No quedan más ciclas del tipo {{bikesInsuficients}}</h2>
+        <p>Puedes esperar a que desocupen alguna bicicleta o seleccionar algún otro tipo de bicicleta</p>
+        <button (click)="dialogoDisp = false">Okay</button>
+    </div>
+    <div *ngIf="dialogoAlqui" class="InsuficientesBis">
+        <h2 style="color: #11bb77;">Has alquilado correctamente la cicla</h2>
+        <p>Si deseas devolver la cicla antes de tiempo oprime el botón "Devolver" en las tablas de ciclas alquiladas</p>
+        <button (click)="dialogoAlqui = false">Okay</button>
+    </div>
+    <div *ngIf="dialogoDisp" (click)="dialogoDisp = false" class="borroso"></div>
+    <div *ngIf="dialogoAlqui" (click)="dialogoAlqui = false" class="borroso"></div>
+
+
+    <form #bikeForm="ngForm" (ngSubmit)="onSubmit(bikeForm)">
+        <h1>Alquiler</h1>
+        <div class="total">
+            <div class="parteIzquierda">
+                
+                <div id="tipe" class="tipoCicla">
+                    <label class="label" for="Radio1">
+                    <input class="check" type="radio" value="0" name="radio" id="Radio1" [(ngModel)]='bikeService.radioBike'>
+                    <span class="checkmark"></span>
+                    </label>
+                    <img src="../../assets/img/cross.jpg">
+                    <div>
+                        <h3>Cross</h3>
+                        <p class="marca">Marca: BMX</p>
+                    </div>
+                    <div class="dispon">
+                        <h4 class="dis">{{bikeService.crossD}} Disponibles</h4>
+                        <h4 class="noDis">{{5 - bikeService.crossD}} No disponibles</h4>
+                    </div>
+                </div>
+
+                <div class="linea"></div>
+                <div class="tipoCicla">
+                    <label class="label" for="Radio2">
+                    <input class="check" type="radio" value="1" name="radio" id="Radio2" [(ngModel)]='bikeService.radioBike'>
+                    <span class="checkmark"></span>
+                    </label>
+                    <img src="../../assets/img/Mountain.jpg">
+                    <div>
+                        <h3>Mountain Bike</h3>
+                        <p class="marca">Marca: BMC</p>
+                    </div>
+                    <div class="dispon">
+                        <h4 class="dis">{{bikeService.mountainD}} Disponibles</h4>
+                        <h4 class="noDis">{{5 - bikeService.mountainD}} No disponibles</h4>
+                    </div>
+                </div>
+
+                <div class="linea"></div>
+                <div class="tipoCicla">
+                    <label class="label" for="Radio3">
+                    <input class="check" type="radio" value="2" name="radio" id="Radio3" [(ngModel)]='bikeService.radioBike'>
+                    <span class="checkmark"></span>
+                    </label>
+                    <img src="../../assets/img//Ruta.jpg">
+                    <div>
+                        <h3>Ruta</h3>
+                        <p class="marca">Marca: Pinarello</p>
+                    </div>
+                    <div class="dispon">
+                        <h4 class="dis">{{bikeService.rutaD}} Disponibles</h4>
+                        <h4 class="noDis">{{5 - bikeService.rutaD}} No disponibles</h4>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="parteDerecha">
+
+                <div class="form">
+        
+                        <label class="labelInp" for="">Fecha de alquilación</label>
+                        <input type="date" name="fechaA" [(ngModel)]='bikeService.fechaA'>
+
+                        <label class="labelInp" for="">Lugar de destino:</label>
+                        <input type="text" name="destino" [(ngModel)]='bikeService.destino'>
+
+                        <label class="labelInp" for="">Color:</label>
+                        <select name="color" [(ngModel)]='bikeService.color'>
+                            <option value="Negro">Negro</option>
+                            <option value="Rojo">Rojo</option>
+                            <option value="Azul">Azul</option>
+                        </select> 
+        
+                        <label class="labelInp" for="">Dias a alquilar</label>
+                        <select name="dias" [(ngModel)]='bikeService.dias'>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    <input class="button" type="submit" value="alquilar">
+                </div>
+    
+            </div>
+        </div>
+    </form>
+    
+</div>
+
